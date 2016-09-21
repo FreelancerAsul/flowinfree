@@ -1,0 +1,47 @@
+header {
+  position:absolute;
+  width:100vw;
+  top:0;
+  left:0;
+  .header {
+    height:65px;
+    width:calc(100% - 20px);
+    background-color: $rich-blue;
+    padding: 5px 10px;
+
+    .brand{
+      background-image:url(../assets/images/logo.svg);
+      background-size: contain;
+      background-repeat:no-repeat;
+      height: 65px;
+      float:left;
+      padding-left: 70px;
+      color: $electric-white;
+    }
+
+    @media only screen and (min-width: 701px) {
+      height: 80px;
+
+      .brand{
+        height: 80px;
+        padding-left: 85px;
+        font-size: 80px;
+      }
+    }
+  }
+  ul{
+    width:calc(100% - 20px);
+    padding: 10px 10px;
+    background-color: $pastel-orange;
+    height:40px;
+    max-height: 0;
+    box-shadow: $shadow-z-1;
+    transition: max-height 0.3s;
+    &:hover{
+      max-height:40px;
+    }
+    li{
+
+    }
+  }
+}
