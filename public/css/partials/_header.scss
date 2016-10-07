@@ -29,7 +29,9 @@ header {
       }
     }
   }
+ul{
 
+}
   ul{
     width:100vw;
     background-color: $pastel-orange;
@@ -42,6 +44,7 @@ header {
     background-image:url(../assets/images/arrow.down.svg);
     background-size: auto 20px;
     background-repeat: repeat-x;
+    overflow: hidden;
     &:hover{
       max-height:45px;
       background-image: none;
